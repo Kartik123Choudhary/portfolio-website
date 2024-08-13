@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">  
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="https://unpkg.com/typed.js@2.0.15/dist/typed.umd.js"></script>
+    <link rel="icon" href="./graduation-solid-24.png">
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Portfolio.</a>
+
+        
+        <nav class="navbar">
+            <a href="#" class="top" style="--i:1;" class="active">Home</a>
+            <a href="#about" style="--i:2;">About</a>
+            <a href="#services" style="--i:3;">Services</a>
+            <a href="#skills" style="--i:4;">Skills</a>
+            <a href="#project" style="--i:5;">Project</a>
+            <a href="#contact" style="--i:6;">Contact</a>
+        </nav>
+    </header>
+    <br/><br/><br/><br/>
+    <section class="home">
+        <div class="home-content"><br/><br/><br/><br/>
+            <h3>Hello, It's Me</h3>
+            <h1>Kartik Choudhary</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a Software Developer with extensive knowledge in Web Development.
+                <br/>My expertise is to create responsive websites using the concepts of Frontend and 
+                <br/>Backend Development technologies.
+            </p>
+            <div class="home-sci">
+                <a href="#" style="--i:8"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAUNJREFUWEft178uBVEQx/HPpRGegidQKCUSiUQlSERFhWegEaV3QEFQKDRaHoEH8CfRUYlCR5AVxXVsYs/uvXbF2WSb3Zmd7/zOmTmzLQ2/Wg3nkwCrrtC/VHAUK5hDH57x2HZP4b6osp1UsB/7mPkh+CBu6wA8LgCXcdUCOI6zgqrUAriHhSYD3mAoB3ADh7jGW8EEvph1qkieMBAAnGKiDFS7T6cAX/l2Ku1gqcmA21hOgAUVyFvi2hRcxWQAPpaTyB0ug+cPmC2Y9IdZmSLZxWJMkDbbc4zE+P424BHmmwy4ibUmA2Zj2Fa3AacxHARZz9nPFzgJ7A5w1W3AvO+/oDd4UVubSYDdGBbSEscUVtqDaQ9+KpD6YEzhpDYTo9afbDPZNNMTkGfTczjNRAtRZqKODlLFIQFWUa/sX13VmFH+7yjjSClPXjh4AAAAAElFTkSuQmCC"/></box-icon></a>
+                <a href="#" style="--i:9"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAABG9JREFUWEftmFfIJUUQhb9VDJgDKpgVA+6uEUz4YMLsqphZc86gYsb8YEIMoBjXLOqqD7oKCmZRMKEoZhQDophzTv1BzdLO33NnhnsffmQL7sPt6a4+U1V96vRMYJzbhHGOj1kAh83Q/yqCmwITgRWAlYFNgAV6ROgF4HXgvfg9AXzatr5LBJcDbgQEOEr7HjgJuBb4p8lxG8DdgFuAuTMHfwPvAp/1RDsXsDowb23dU8DWwC8lf4MALhFA5o+FdwCXAa8Av/cEl09fEZiSonYWsHA8uBA4pS/A6almjKB2XIAbAteYpYsAr6UULwmYlbWBV+uzmiK4FvByFrmpI0JmlNYAzMYMYN906G4O3w9EZP+zVRNAw392zNwYsE6GtYMBU2nkfgR2BR4GPkiH0INo2fjsp3yjJoD3x9v8BliDf7Sgs/Anxc9N3gpKcfPKLJNLsv87RBRvAA6I8XWBF7sAfAlYB3gjNm3CN3sUtxGfozDJMtkjDpsHQjA7AVeniJ0GfAOcCpwXayvQM101RfD9IOQng5BLAJdKtHEvsH5LdM2C0buqYZ6pvy6eGcmbukTwq6gHU71jwfFswDPABvHsZ+Ai4B3g23g5aywn9y2ARwq+9gmu9dHhwDVdAP4AzJfSe3dK8+4Fpycn8r4gxiXt7SKN+VRf4hzg9Bj8BFgN0HduewO3xsARkf7WFMvqdo/bAR3U7UtgUeCvoA1rtckeAraKh4dFaxsaoBsbATlq/9rOq8Ypddi6OrKlBpdNp/TDmGPb3K82fy/gtr4RtLDnTCm5K4HZs+bwIOD6GLPT3NMC0MdvA6uEilmpNl//Erd2DHBF/rzpFH8XUuq+oIV8TU7iGwHPdgD4WBwYyVjRkNvOwQaOHQ9c2gWgJ3HBxIWlU5w7LNVUCa98t1C0T/k1t12yLBybBMTlwwJUjSg6tceBzQfpudQmNwMejfmWxiE1gBL5nTF2NHBlH4A2dNm9bvbQLWPw3JBOpcgtHa1L6aZiWS+1ULtUbjnNdObBQSnW+TJxkufJImnLUtYLRApSqciDlZ68OAmBEwtvcWDyNy3GPYC2w5nWdEg+T6FeLHUKOWybUmjSfcL6s6fm5uH6ONXU5Nq4HUYJV1LN0lSVVtOtDm0FqBqR757L2lkJp1Jdrly84SUctrdKH0qskh2VUcsY2mqKoMXvrU2CXX7A5j4ynSdEhLz1+d/b25vRKh9sWW8NnxFzxmjPJoC+dcX4RueLlk2GeewLbBsOfLmvu6RYiW8f1iz+ShgMA6S01ju25WTXMur12m38NuOF3MKWHn6NhRX3jRKk/ChPagrY8+vOB107lVn2Yk2pZFRHcTep6taPAV4/NdXQmkma/dkHoHMl6u2zRVKAyqOu6bpG1YAoYg+N7FTrVOXPl5y0fVnwMmT9SQVtc7uCzOfJEirqp5sWd910w7i426pGYX6X8ZvMmU2fPKpNugKs5ksDgvXrlmqnjymCP4pTW7XE1vV9AbY6HPWEWQCHjei4j+C/fivZKWjDHBkAAAAASUVORK5CYII="/></box-icon></a>
+                <a href="#" style="--i:10"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAABIZJREFUWEftmFeoXVUQhr/YY0tsRMWu2Ejig4mKFaxY0FiwIQr2GlCxPIgFLCg27CUBo2LEiogoFmwYNRqMIIqNBDQRxd7Fuj6ZHdbZnt3OvQ8XycDlnrP3mln/mjXlnzOKES6jRjg+FgMc6g397z24PnAUsBewJrAGsCLwNfAF8AnwHPAs8PYg3hzUgwcA5wA7dNh0bgJ9ajrMqx10OifJNsB0YHxpkw+Ad4HPgG/Cm2sD2wMrl9beBZwG/NwGaBcP7g88ACwbht3gSuBB4L2KzZYCdgOOAQ6HRQ6ZA+wLfN4Esi1A4+zubAM/e8XGWVvZELgOMDyUhSk2d0zg59UZaAPQOHseWBr4DTgBuKctqtI697s9bPjK0Nga+LHKXhPA9dKJ3wJWBX4B9kh/rwwILle7ATgjHjwJ7Af81c9uE8BHUnk4MJSNmaeGAZwmlohb2TnsnQjc2RXgTsBLoXRbCuhTMgPLpc8XJ8DbJe/qDQ/SVVZPNfSjFJdj0pUvSGGzcYRQj506D1pczUDjbqMI6kLZ0x4fX4yjzYG/uyIEzgKuCb3Dokq0AmjMmaFLAtOyoFbZ7jG/BMZO8vQAAEdH1/FGLGGCbAXwuADmYhNDbxYyBXi0ZMfiXXi0K86HgIMjCXXMr7mBqiu+FTg51bqfIkb+zJSsXS+XUJRjtAvII4D7QmESYBFfJFUAi1N9DGxS2m2Z6ABj47kBvmWKp++7oMrWbhFt0keWmyfaAHwhlYFdgNnAtn02tsWdG88fBg4ZEJxq6wTr8fNJwB1tAL4OSAxkHjb8shgrkoNx8eKgPnHZFvNaWYUwq22HjVf8DLB7ZHIBoryh712nSBz2AV5siypbZ6t7M74fCcxsA3AGcHQsXKmmV56Z6NS1se6PlIHnhweKtiX/0ytXpFi+t18hBmRJj4UNw6poDv8+qkqSvIBOSDH2To1n7CgXZe8lprIfa5x926RSTLhLAflgLh7QgyreVg9DqgJoYrwWShckJnNZw9Vdkvr1hS2u9/cMcLFc4HYqr3ly2UZdq7NP2h+/BGQ1spk62TvNJDcD8r4qKVeFvKZ6SG+jR+oASockAsrpsXmTk+SM8kWvrFw/LfoyoiKR3Fsqt1Wwpc2CPLQGKLV3KnNS+zBV+02b0JXeT4xpb4Xo3TKevJifnSbAq0PnxtSTp/azX+dBAX4XM4jG7ZfDJV6tnpQXOmQZSv7/j9QB3DVmWpW8NlnNcIgJ+HjcjOVoz2yfTgCtXdY1Zd3EVj6Nz3p2A+D9jmh1hqT3+phvVDfOb6qzU+fBNwDZhS3t2FRA9agE1usR5CzgljQjSywktVXiXHxoqgLnZYljuTHmZEG1UgVwtSgvTfq+/yriydnY0uQ4aX91cHfmsCU6Hxci2ZVc9NCqqo2qAMps7++j9G2QV+m9SWOQtxXrqGFzVYPHe+xVATQhZNUCscI7GkrpZTdFnzUu/QlDYuvg009+CO/KyKX0/jTSSaoAXh5FVLai1+pEGwJcJf6Wj/Cwp/or15CkaS4ekvHhUF4McKheHPEe/Ae+sdMpmwc9fQAAAABJRU5ErkJggg=="/></box-icon></a>
+                <a href="#" style="--i:11"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAi9JREFUWEft2E+oTVEUx/HPK0L+JekVmZCkGBAlb2BgJANKmRlJ/iZGBpiIlAye5M/AQMrIhPzJyEBE+VMyY2AiRZJI+VvurnNe9932Pve4xz3u4Ky6k73P3ut71lq/tc++QwbchgacTwNYNUPdIrgQc/ES76o662V9CnAaLmFz26ZnsK8XJ1XWpACvYWNk45M4WMXh366NAS5tRe5FYqOvCNGtzWKA63G7gGAe3tZFGANclIkixvARs+uCC35SNXgZWyMgh3F8EAADwwXsyGBC7QWBHK0TriiCOcfUrA++qhss99etUf8vrjG/dQEuwXLMRyiX13hS5nRKAT7Amkj4zmFP2/guhLFOu45NWNnqm6ewNpGKx9iO56lU9RPwCsJvYpc6+ZEdqTdjz6UA72MksuAs9raN78T5yHPPWnChn04vWcQ/sThL/bgl/YpgSa5xj53G/s6FKcCHWB3xEnpjqLvcdiNE9V9YEM6CsoBVRZL7uZGJ6g2WZcI5ggmJNxrG+/a5fqb4XkK9x3AoARg6R8jemPVLJMHBOtyNgKzA0wTgFlwtA1g1xb8wGb8jIJPwLQEYeuLFOgA/tMQzp0A5ATCAdlpQcVBz1xRXjeBnzCwA/JSYP4DRMoBV28wXzCgADB++syLzDWAelCaCTQ02IsnUkPqaaUSyLbvgdPbScIe41Ta4ChsiDfd76yg7UdCowx9QUyLzd/CozElSsHe9U3VdO3t+qwaw59BlC/8ABEKUKah8u6oAAAAASUVORK5CYII="/></a>
+            </div><br/><br/>
+            <a href="#" class="btn-box">More About Me</a>
+        </div>
+        <div class="box">
+            <div class="content">
+                <img src="./kartikimage.jpeg" alt="image">
+                <h2>Kartik Choudhary <br/><span>Software Developer</span></h2>
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+    </section>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    
+
+    <section class="about" id="about">
+        <div class="box">
+            <div class="content">
+                <img src="./kartikimage.jpeg" alt="image">
+                <h2>Kartik Choudhary <br/><span>Software Developer</span></h2>
+                <a href="#">Hire me</a>
+            </div>
+        </div>
+        <div class="about-text">
+            <h2>About <span>Me</span></h2>
+            <h4>Full Stack Developer!</h4>
+            <p>Full Stack Developer in my 3rd year of B.Tech at Vellore Institute of Technology. Skilled in Frontend and Backend Development with a passion for creating captivating, user-friendly websites. I stay updated with design trends and enjoy solving DSA problems to enhance my software development skills. I strive to create intuitive and seamless browsing experiences by thoroughly analyzing project requirements.
+            </p><br/>
+
+    <a href="#" class="btn-box">More About Me</a>
+        </div>
+    </section><br/><br/><br/><br/>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My <span>Services</span></h1>
+                <div class="services-list">
+                    <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAjhJREFUWEftlr9rFEEUgL+XM3aS3B6RCEKiKAhWlhou5H+wE7VIVFAstDOthVoICoKCvxqxEPwrlJhSQcQUgVgEFMPuJVooRvNkszmY7O3uzOyemGK3vHnz3rffm31zwg5/ZIfzUQNW7VBtsDZY1UDV/fUZ/D8GV/UA6/xkRD47A3R0kqa8co7fCvRvcaj7EeZRfrCbCfbIirVopJeBe8AsgdyyxhsBfoAJ3GtgfCvHR+A4gazlFg31PMJDY90L0h3wq46yi3kDLq75gQHaDEunAHAa4TEY16pwlabcdTHpBpjAxeYOGUntcN3gUEtD2gGrwhVBwiUCeVBkshjwu46wzpvS5tKVs0xaIPMBE7h4LBwp1dY8LZ6Q2YD/Cq6o3coMLXmafq9ewDUN+MNc383Z260o59KQvYChnkR4uS2fx1hwGR2bMavaZIO3wJix5x2BHDNzZLc4OSdPjMDMt3OGSQcmcPHYOmosvafBFEMS2QHjiEgvAvf7DpkNt0CDiTRcXLt4zGRBwhkCeV7KXh7cIJN5d7p9UPdCbgBnvSFLwNkNdjV19ArKHcOaH2Q23CKDnLD9G7IbrAqZB/ebNnvli+2ouAMmH84scGNb0gEOMixLuYUifQacNtYXcYRzb7FZPdJrwM3Nn5QLtORRoYX4VvrFHMJh4BNKm5Ys28x11/0MdneFeh34RktuOxVa0X00eIFyygeunEEnov4FlTPYv/rWTDWgVZEloDZYG6xqoOr++gxWNfgXGzTQKQD0UzMAAAAASUVORK5CYII="/>
+                        <h2>DSA</h2>
+                        <p>My competitive programming experience and strong problem-solving 
+                            skills ensure robust and scalable solutions.I have expertise in designing algorithms and implementing them</p>
+                    <a href="#" class="read">Learn More</a>
+                    </div>
+                    <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAYtJREFUWEftl71KBDEURs/VUliYcX2ArbWwU2zEzmZBwd7GRhDETvAdxEosfQNFfABLW8HCYgULCwX3h9VCEOfKjOPi7LoTx2R1kaScTG5OvpvvJhGGvMmQ8/EPAOu6CMwmSgt3hHLwm6qbFazrHsJmCnVBKNMe8JMCXkHb7ZBVsKlLRGT3mBCbZCY1yT0RdiYZISLiijYnVOTZtIAsYF0PEVZNgxz111AWGJfbvHh/CRhznRJK9fuADd2GJKWDbGVgsjNBKLlGNbvYNWq8z5WjTlghIJBWv2k8YI8yzhVs6AawkpaZGoGsWWXdOaDrs9gD2t5mvIJewWyNMBdq72Lbo84r6BUseDI7L9RN3UXZSjGuEYpfFka5pCQPSYxuQKgiPGWW2eL8471iLjMNXQf2C+rUXcyWCeS4D2BvaKFCIDdxhxnwUSd4oQaUfgwpDBDwPS3zwA7KHDBWGHTggIWJcgY4N4lLuK9M4h9NRRX2KS6qWPf/bS3zylTncyBneSHNddAWyHL80AO+AcRs+in5YQHpAAAAAElFTkSuQmCC"/>
+                        <h2>Backend</h2>
+                        <p>Specializing in building robust and scalable server-side applications, I have extensive
+                             experience with database management, API development, and server 
+                             optimization.</p>
+                    <a href="#" class="read">Learn More</a>
+                    </div>
+                    <div>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAAAXNSR0IArs4c6QAAAxJJREFUWEftmE1IVFEUx39nJsmF4rw3WZBo1EJqEbWwWthCpDYVtcmoqEW0ciFRRBTlJooWYUFBHxuhhTtXRVGLiuzLvgmiIIkoLFDHN2VEqTinnqXI5Lx33x0HXXQ2s7jnf87vnXvvOe+NMMNNZjgf/wH5qi4jbANW44r/G8kKV0HVGGkOAc3AbGAAV8oi0UGBtlhVSHMJ2DkB6AGu1M4MQE8PA8eyYBpx5cL0A37Tcob5CBRPgOnmO9VUyo/pB/T04O8zd2ICyBBKHUl5GBXO95/6S+LpFWDDKIzSS4wGHOmwgSsMYL/eRChHaEc4S0LStnDRAT3124TfOtYBC4Bh4AFwHeEqjnwYhxnQJMOsQdgIrAQWoaQQ3iK0kqANkaEwePMt7tfNCBcBNyBoJ8oNhEVZLeZfidJFnK0k5HkQpBlgWltQ9oU9rcX6IEo9SfF3YVILB+zXvQinLJKbSYRmHMnumePaYMAvupAMXUDcLFtkrx240ma/xZ6eAZoipzURCC04sj/MNbiC/dqDMDcsiMV6CoeK/G5xSiuI0W2R3ERyElcOmDjmrmBKVxGj0yRIZB9lN0lpNdHlBkxrHcptkyCRfZQGktJuogsCXI7ywiRIZB9hD474FzDUcgP26XzifAqNYOdwGVc2mUhzA6rOIs3PAvXADHEWUyZ+jw204DbjqX8G68KCWK0rt3BZi0jGvlGntRnlqBWAmeg8Dk2IjORyDxt1NWR4YpbL2usRGXYxR95MFsHkZeEJQo11ehOhcBpHJn1bCgf0dDsQONBNGAJ8BimiilLptaugapw0z4BleYLkkh/HlSN2Z3BM5an/wX2vAIAeykKSMpAfoK/29BzQOKWQBhMl/AyOEb3XYhK8RKmeIsgOHOoQUfs+mK3s02riPAVK84R8xzC1zJOesDjmFRyLlNIVxPDfRKrGgwt+orvAKxitcgmw9O/F8ieR/+/WmN1nhC2Uy+cwOH89OuCf8+h/H68HKhEek+BOzpHVqyUUUY+yBHiNw7WgyZENbQdo8uhT5PMfMN9CzvgK/gLdE8cpQgYvTwAAAABJRU5ErkJggg=="/>
+                        <h2>Frontend</h2>
+                        <p>Proficient in creating responsive and visually appealing user interfaces, I excel in HTML, CSS, and JavaScript. My focus on user experience and design trends ensures engaging and intuitive web applications that meet modern standards.</p>
+                    <a href="#" class="read">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="skills" id="skills">
+        <h1 class="sub-title1">My <span>Skills</span></h1>
+    </section>
+
+
+    <section>
+        <div class="container1" id="Skills">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar"><i style="color:#147bbc" class='bx bxl-html5'></i>
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#c95d2e" class='bx bxl-css3'></i>
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#b0bc1e" class='bx bxl-javascript'></i>
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#c32ec9" class='bx bxl-c-plus-plus'></i>
+                    <div class="info">
+                        <span>C++</span>
+                    </div>
+                    <div class="progress-line C">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar"><i style="color:#69bcbc" class='bx bxl-nodejs'></i>
+                    <div class="info">
+                        <span>Node.js</span>
+                    </div>
+                    <div class="progress-line node">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container1">
+            <h1 class="heading1">Professional Skills</h1>
+            <div class="radial-bars">
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">90%</div>
+                    <div class="text">Creativity</div>
+                </div>
+
+
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">95%</div>
+                    <div class="text">Communication</div>
+                </div>
+
+
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">70%</div>
+                    <div class="text">Problem Solving</div>
+                </div>
+
+
+
+                <div class="radial-bar">
+                    <svg x="0px" y="0px" viewBox="0 0 200 200">
+                        <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+                        <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+                    </svg>
+                    <div class="percentage">60%</div>
+                    <div class="text">Team Work</div>
+                </div>
+            </div>
+        </div>
+    </section><br/><br/><br/>
+
+    <section>
+        <div id="Portfolio" id="project">
+            <div class="main-text" id="project">
+                <h2>Latest <span>Project</span></h2><br/><br/>
+
+                <div class="portfolio-content">
+                    <div class="row">
+                        <img src="./voting application image.jpg" alt="voting application image">
+                        <div class="layer">
+                            <h5>Voting Application</h5>
+                            <p>This is a voting appliaction , where the person can cast vote</p>
+
+                            <a href="#"><i class='bx bx-link-external' style="color:#ff004f"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <img src="./chat application.jpeg" alt="chat-application image">
+                        <div class="layer">
+                            <h5>Chat Application</h5>
+                            <p>This is a Chat appliaction , where the person can communicate with the other person</p>
+
+                            <a href="#"><i class='bx bx-link-external' style="color:#ff004f"></i></a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><br/><br/><br/><br/>
+
+    <section class="contact" id="contact">
+        <div class="contact-text">
+            <h2>Contact <span>Me</span></h2><br/><br/><br/>
+            <h4>Let's Work Together</h4>
+            <p>As a fresher, I'm eager to tackle new challenges<br/> and collaborate with professionals. Whether you <br/> need a passionate web developer, help with front-end <br/> or back-end tasks, or a keen learner ready to contribute,<br/> I'm here to help. My strong foundation in web development<br/> and drive to grow ensure I bring fresh perspectives and<br/> dedicated effort to every project.</p>
+            <br/><br/>
+            <div class="contact-list">
+                <li><i class='bx bxs-send'></i> skkartik006@gmail.com</li><br/>
+                <li><i class='bx bxs-phone'></i> +91  8341673870</li>
+
+            </div>
+            <div class="contact-icons">
+                <a href=""><i class='bx bxl-facebook-circle'></i></a>
+                <a href=""><i class='bx bxl-whatsapp'></i></a>
+                <a href=""><i class='bx bxl-instagram'></i></a>
+                <a href=""><i class='bx bxl-linkedin'></i></a>
+            </div>
+
+        </div>
+
+        <div class="contact-form">
+            <form action="">
+                <input type=""  placeholder="Enter Your Name" required>
+                <input type="email"  placeholder="Enter Your Email" required>
+
+                <input type="" placeholder="Enter your Subject">
+                <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message" required></textarea><br/><br/>
+                <input type="submit" value="submit" class="send">
+            </form>
+        </div>
+    </section>
+
+    <div class="last-text">
+        <p>Developed with love by Kartik Choudhary @ 2024</p>
+    </div>
+    <a href="#" class="top1"><i class='bx bx-up-arrow-alt' ></i></a>
+
+    <script src="main.js"></script>
+</body>
+</html>
