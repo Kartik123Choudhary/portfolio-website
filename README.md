@@ -1,12 +1,12 @@
 # portfolio-website
 🎨 Personal Portfolio
-Welcome to my personal portfolio! This project is a culmination of my passion for web development, design, and showcasing my journey as a Full Stack Developer.
+Welcome to my personal portfolio! This is my First Project. This project is a culmination of my passion for web development, design, and showcasing my journey as a Full Stack Developer.
 
 🌟 About This Project
 This portfolio is more than just a collection of projects—it's a reflection of who I am as a developer. Here, you'll find my latest work, a bit about my background, and how I approach solving problems. Feel free to explore the different sections and get to know me better!
 
 🛠️ Built With
-Frontend: HTML, CSS, JavaScript
+Frontend: HTML, CSS.
 Styling: Advanced CSS techniques, responsive design, animations
 Tools: Git, GitHub, VS Code
 
